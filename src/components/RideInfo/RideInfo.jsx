@@ -82,12 +82,20 @@ const RideInfo = ({theme, setTheme}) => {
                 htmlFor="drop-location">
               Preferred vehicle
             </label>
-            <input 
+            <select 
+              className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${theme === 'dark' ? 'bg-gray-900 text-white focus:bg-gray-700' : 'bg-gray-200 text-gray-700 focus:bg-white'}`}
+              name="vehicleType" onChange={handleChange}>
+              <option value="">Select a vehicle type</option>
+              <option value="car">Car</option>
+              <option value="car">Auto</option>
+              <option value="van">Van</option>
+            </select>
+            {/* <input 
                 className={`appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none ${theme === 'dark' ? 'bg-gray-900 text-white focus:bg-gray-700' : 'bg-gray-200 text-gray-700 focus:bg-white'}`}
                 id="drop-location" 
                 type="text" 
                 name="dropLocation" 
-                onChange={handleChange} />
+                onChange={handleChange} /> */}
           </div>
           <div className="w-full px-3">
             <label 

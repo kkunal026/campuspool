@@ -14,11 +14,12 @@ const LookRide = ({theme, setTheme}) => {
 
   return (
     <>
-    <Navbar/>
-    <div className="flex flex-col md:flex-row m-4">
+    <div className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}>
+    <Navbar theme={theme} setTheme={setTheme} />
+    <div className={`flex flex-col md:flex-row m-4 ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}>
       <div className="hidden md:block md:w-1/3 p-4">
         <h2 className="mb-4 font-bold text-lg">Filters</h2>
-        <Filters/>
+        <Filters theme={theme} setTheme={setTheme} />
       </div>
       <div className="w-full md:w-2/3 p-4">
         <h2 className="mb-4 font-bold text-lg">Available Rides</h2>
@@ -33,10 +34,10 @@ const LookRide = ({theme, setTheme}) => {
         ))}
       </div>
     </div>
-    <Footer/>    
+    <Footer/>   
+    </div> 
     </>
   );
 };
 
 export default LookRide;
-
