@@ -25,11 +25,11 @@ const FooterLinks = [
     link: "/#blog",
   },
 ];
-const Footer = () => {
+const Footer = ({theme, setTheme}) => {
   return (
-    <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
+    <div className="bg-gray-100 dark:bg-dark">
       <section className="container">
-        <div className=" grid md:grid-cols-3 py-5">
+        <div className= {`grid md:grid-cols-3 py-5`}>
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">

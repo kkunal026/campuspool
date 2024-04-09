@@ -2,23 +2,24 @@ import React, { useState } from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
+import { Link } from "react-router-dom";
 
 export const Navlinks = [
   {
     id: 1,
-    name: "HOME",
-    link: "/",
+    name: "CREATE RIDE",
+    link: "/create-ride",
   },
   {
     id: 2,
-    name: "RIDES",
-    link: "/",
+    name: "FIND RIDE",
+    link: "/find-ride",
   },
   {
     id: 1,
-    name: "ABOUT",
+    name: "YOUR RIDES",
     link: "/",
-  },
+  },  
   {
     id: 1,
     name: "LOGIN",
@@ -39,7 +40,7 @@ const Navbar = ({ theme, setTheme }) => {
       <div className="container py-2 md:py-0">
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-3xl font-bold font-serif">CampusPool</span>
+            <Link to='/' className="text-3xl font-bold font-serif">CampusPool</Link>
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
