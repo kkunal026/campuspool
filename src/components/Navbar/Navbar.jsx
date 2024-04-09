@@ -7,21 +7,26 @@ import { Link } from "react-router-dom";
 export const Navlinks = [
   {
     id: 1,
+    name: "HOME",
+    link: "/",
+  },
+  {
+    id: 2,
     name: "CREATE RIDE",
     link: "/create-ride",
   },
   {
-    id: 2,
+    id: 3,
     name: "FIND RIDE",
     link: "/find-ride",
   },
   {
-    id: 1,
+    id: 4,
     name: "YOUR RIDES",
     link: "/my-ride",
   },  
   {
-    id: 1,
+    id: 5,
     name: "LOGIN",
     link: "/login",
   },
