@@ -5,12 +5,12 @@ import Card from '../../components/Card/Card'
 
 const YourRide = ({theme, setTheme}) => {
   return (
-    <div>
-      <Navbar/>
+    <div className={`${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-gray-100 text-black'}`}>
+      <Navbar theme={theme} setTheme={setTheme}/>
       <div className="pl-4 ">
-      <Card/>
+      <Card theme={theme} setTheme={setTheme}/>
       </div>
-      <Footer/>
+      <Footer theme={theme} setTheme={setTheme}/>
     </div>
   )
 }
