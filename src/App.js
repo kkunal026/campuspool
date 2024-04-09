@@ -4,6 +4,7 @@ import LoginPage from './components/Login/Login';
 import Home from './pages/Home/Home';
 import CreateRide from './pages/CreateRide/CreateRide';
 import LookRide from './pages/LookRide/LookRide';
+import YourRide from './pages/YourRide/YourRide';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route exact path='/login' element={<LoginPage/>}/>
           <Route exact path='/create-ride' element={<CreateRide theme={theme} setTheme={setTheme} />}/>
           <Route exact path='/find-ride' element={<LookRide theme={theme} setTheme={setTheme} />}/>
+          <Route exact path='/my-ride' element={<YourRide theme={theme} setTheme={setTheme} />}/>
         </Routes>
       </Router>
     </div>

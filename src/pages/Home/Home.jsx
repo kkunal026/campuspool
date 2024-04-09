@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Component import
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
@@ -11,7 +10,7 @@ import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
-  // dark mode start
+  
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -24,11 +23,9 @@ const Home = () => {
     } else {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
-
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [theme]);
-  // dark mode end
 
   React.useEffect(() => {
     AOS.init({
