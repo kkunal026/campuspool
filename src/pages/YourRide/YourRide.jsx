@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
+import Card from '../../components/Card/Card'
 
-const YourRide = () => {
+const YourRide = ({theme, setTheme}) => {
   return (
     <div>
-      Your Rides Page
+      <Navbar/>
+      <div className="pl-4 ">
+      <Card/>
+      </div>
+      <Footer/>
     </div>
   )
 }

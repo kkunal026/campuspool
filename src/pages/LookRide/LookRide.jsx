@@ -6,9 +6,9 @@ import Filters from '../../components/Filters/Filters';
 const LookRide = ({theme, setTheme}) => {
   // This is just dummy data. Replace it with your actual data.
   const rides = [
-    { startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
-    { startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
-    { startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
+    { email:"User1", startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
+    { email:"User1", startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
+    { email:"User1", startLocation: 'Location 1', endLocation: 'Location 2', date: '2022-01-01', numberOfPeople: 2, vehicle: 'Car',price: 100 },
     // Add more rides here...
   ];
 
@@ -25,6 +25,7 @@ const LookRide = ({theme, setTheme}) => {
         <h2 className="mb-4 font-bold text-lg">Available Rides</h2>
         {rides.map((ride, index) => (
           <div key={index} className="mb-4 p-4 border rounded">
+            <h2 className="font-bold mb-2">{ride.email}</h2>
             <h3 className="font-bold mb-2">{ride.startLocation} to {ride.endLocation}</h3>
             <p>Date: {ride.date}</p>
             <p>Number of people: {ride.numberOfPeople}</p>
