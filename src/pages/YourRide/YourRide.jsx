@@ -2,6 +2,12 @@ import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card'
+import { BsFillPersonFill } from "react-icons/bs";
+import { FaMapMarkedAlt } from "react-icons/fa";
+import { BsCalendar2DateFill } from "react-icons/bs";
+import { RiSearchEyeFill } from "react-icons/ri";
+import { BsFillCarFrontFill } from "react-icons/bs";
+import { ImPriceTags } from "react-icons/im";
 
 const YourRide = ({theme, setTheme}) => {
   return (
