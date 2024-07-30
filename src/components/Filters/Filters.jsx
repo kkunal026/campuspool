@@ -28,6 +28,7 @@ const Filters = ({theme, setTheme}) => {
           <option value="car">Car</option>
           <option value="car">Auto</option>
           <option value="van">Van</option>
+          <option value="van">Other</option>
         </select>
 
         <label className="block mb-2" htmlFor="price">Price</label>
