@@ -15,6 +15,10 @@ const Filters = ({theme, setTheme}) => {
   return (
     <div className="w-full">
       <form>
+      <label className="block mb-2" htmlFor="numberOfPeople">Start Location</label>
+        <input className="w-full mb-4 p-2 border rounded" type="text" name="numberOfPeople" onChange={handleChange} />
+        <label className="block mb-2" htmlFor="numberOfPeople">End Location</label>
+        <input className="w-full mb-4 p-2 border rounded" type="text" name="numberOfPeople" onChange={handleChange} />
         <label className="block mb-2" htmlFor="numberOfPeople">Number of People</label>
         <input className="w-full mb-4 p-2 border rounded" type="number" name="numberOfPeople" onChange={handleChange} />
 
